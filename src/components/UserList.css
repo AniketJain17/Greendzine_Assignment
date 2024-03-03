@@ -1,0 +1,135 @@
+.user-list-container {
+	overflow: hidden;
+}
+.logo-container {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+
+.user-header img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	margin-top: 70px;
+	position: relative;
+}
+.notification-badge {
+	position: absolute;
+	top: 6%;
+	right: 47%;
+	background-color: rgb(1, 12, 1);
+	color: green;
+	font-size: 14px;
+	padding: 5px 8px;
+	border-radius: 50%;
+}
+.user-dob-value {
+	color: rgba(255, 68, 0, 0.746);
+}
+
+.user-role-value {
+	color: #36a546;
+}
+
+.search-bar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	
+}
+
+.search-input {
+	width: 30%;
+	padding: 10px;
+	border: 1px solid #ddd;
+	background: #5e5e5e82 0% 0% no-repeat padding-box;
+	color: white;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+	position: relative;
+	right: 30px;
+	cursor: pointer;
+}
+
+.search-icon svg {
+	fill: white;
+	width: 20px;
+	height: 20px;
+}
+
+.user-cards-container {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	overflow: hidden;
+}
+
+.user-card {
+	font: normal normal bold 16px/21px Mulish;
+	width: 48%;
+	margin-bottom: 20px;
+	padding: 10px;
+	color: white;
+	border-radius: 8px;
+	background: #1a2c2c99 0% 0% no-repeat padding-box;
+	mix-blend-mode: normal;
+	opacity: 1;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+p {
+	opacity: 0.6;
+}
+
+.user-card:nth-child(odd) {
+	margin-right: auto;
+	margin-left: 0;
+}
+
+.user-card:nth-child(even) {
+	margin-right: 0;
+	margin-left: auto;
+}
+.bottom-navigation {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: #1a2226;
+	display: flex;
+	justify-content: space-around;
+	padding: 10px 0;
+}
+
+.bottom-navigation svg {
+	color: green;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+	.user-list-container {
+		overflow: hidden;
+	}
+	.user-card {
+		width: 60%;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.search-input {
+		width: 60%;
+	}
+	.bottom-navigation {
+		padding: 10px;
+	}
+	.notification-badge {
+		top: 6%;
+		right: 40%;
+	}
+}
